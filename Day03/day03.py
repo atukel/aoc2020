@@ -1,5 +1,6 @@
 grid = [input.strip() for input in open("input.txt").readlines() if input.strip()]
 
+
 def part1(rowIncrease, columnIncrease):
     treeCount, row, column = 0, 0, 0
     while row < len(grid):
@@ -9,6 +10,7 @@ def part1(rowIncrease, columnIncrease):
         row += rowIncrease
         column += columnIncrease
     return treeCount
+
 
 print(part1(1, 3))
 
